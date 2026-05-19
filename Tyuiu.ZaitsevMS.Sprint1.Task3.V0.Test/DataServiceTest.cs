@@ -5,7 +5,7 @@ using Tyuiu.ZaitsevMS.Sprint1.Task3.V1.Lib;
 namespace Tyuiu.ZaitsevMS.Sprint1.Task3.V1.Test
 {
     [TestClass]
-    public class DataServiceTest
+    public class DataServiceTest 
     {
         [TestMethod]
         public void ValidExpression()

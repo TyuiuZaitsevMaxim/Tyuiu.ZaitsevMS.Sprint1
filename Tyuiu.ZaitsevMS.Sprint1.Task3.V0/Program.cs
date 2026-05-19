@@ -12,7 +12,7 @@ namespace Tyuiu.ZaitsevMS.Sprint1.Task3.V1
         static void Main(string[] args)
         {
             DataService ds = new DataService();
-
+              
             Console.Title = "Спринт #1 | Выполнил: Зайцев М. С. | ИБКСб-25-1";
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #1                                                               *");
