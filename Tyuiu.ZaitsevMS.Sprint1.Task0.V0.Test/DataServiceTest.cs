@@ -7,7 +7,7 @@ namespace Tyuiu.ZaitsevMS.Sprint1.Task0.V30.Test
     [TestClass]
     public class DataServiceTest
     {
-        [TestMethod]
+        [TestMethod] 
         public void TestMethod1()
         {
             DataService ds = new DataService();
