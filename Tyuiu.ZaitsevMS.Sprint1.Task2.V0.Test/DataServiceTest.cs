@@ -1,8 +1,8 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using Tyuiu.ZaitsevMS.Sprint1.Task2.V0.Lib;
+using Tyuiu.ZaitsevMS.Sprint1.Task2.V16.Lib;
 
-namespace Tyuiu.ZaitsevMS.Sprint1.Task2.V0.Test
+namespace Tyuiu.ZaitsevMS.Sprint1.Task2.V16.Test
 {
     [TestClass]
     public class DataServiceTest
@@ -11,9 +11,9 @@ namespace Tyuiu.ZaitsevMS.Sprint1.Task2.V0.Test
         public void ValidExpression()
         {
             DataService ds = new DataService();
-            int x = 2;
-            var res = ds.Sqr(x);
-            Assert.AreEqual(4, res);
+            int r = 5;
+            var res = ds.CalculatePerimetrCircle(r);
+            Assert.AreEqual(31.416, res);
         }
     }
 }

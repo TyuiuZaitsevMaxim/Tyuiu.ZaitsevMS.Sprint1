@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Tyuiu.ZaitsevMS.Sprint1.Task2.V0.Lib;
+using Tyuiu.ZaitsevMS.Sprint1.Task2.V16.Lib;
 
-namespace Tyuiu.ZaitsevMS.Sprint1.Task2.V0
+namespace Tyuiu.ZaitsevMS.Sprint1.Task2.V16
 {
     internal class Program
     {
@@ -18,26 +18,26 @@ namespace Tyuiu.ZaitsevMS.Sprint1.Task2.V0
             Console.WriteLine("* Спринт #1                                                               *");
             Console.WriteLine("* Тема: Арифметические операторы в C#                                     *");
             Console.WriteLine("* Задание #2                                                              *");
-            Console.WriteLine("* Вариант #0                                                              *");
+            Console.WriteLine("* Вариант #16                                                             *");
             Console.WriteLine("* Выполнил: Зайцев Максим Сергеевич | ИБКСб-25-1                          *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
             Console.WriteLine("* Написать программу, которая запрашивает у пользователя исходные данные, *");
-            Console.WriteLine("* вычисляет квадрат числа и печатает его на экране.                       *");
+            Console.WriteLine("* вычисляет периметр круга и печатает его на экране.                      *");
             Console.WriteLine("*                                                                         *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            int x;
-            Console.WriteLine("Введите x: ");
-            x = Convert.ToInt32(Console.ReadLine());
+            int r;
+            Console.WriteLine("Введите радиус круга: ");
+            r = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            Console.WriteLine("Квадрат числа x = " + ds.Sqr(x));
+            Console.WriteLine("Периметр круга = " + ds.CalculatePerimetrCircle(r));
             Console.ReadLine();
         }
     }

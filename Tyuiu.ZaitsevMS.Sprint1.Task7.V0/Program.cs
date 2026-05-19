@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Tyuiu.ZaitsevMS.Sprint1.Task7.V0.Lib;
+using Tyuiu.ZaitsevMS.Sprint1.Task7.V4.Lib;
 
-namespace Tyuiu.ZaitsevMS.Sprint1.Task7.V0
+namespace Tyuiu.ZaitsevMS.Sprint1.Task7.V4
 {
     internal class Program
     {
@@ -18,40 +18,30 @@ namespace Tyuiu.ZaitsevMS.Sprint1.Task7.V0
             Console.WriteLine("* Спринт #1                                                               *");
             Console.WriteLine("* Тема: Итоговый проект по спринту                                        *");
             Console.WriteLine("* Задание #7                                                              *");
-            Console.WriteLine("* Вариант #0                                                              *");
+            Console.WriteLine("* Вариант #4                                                              *");
             Console.WriteLine("* Выполнил: Зайцев Максим Сергеевич | ИБКСб-25-1                          *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
             Console.WriteLine("* Написать программу, которая вычисляет математическое выражение по       *");
             Console.WriteLine("* исходным значениям данных, вводимых пользователем.                      *");
+            Console.WriteLine("* Формула: z = ln|(y - sqrt(|x|)) * (x - y / (x + x^2/4))|              *");
             Console.WriteLine("*                                                                         *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
-            Console.WriteLine("                 y - z");
-            Console.WriteLine("                -------");
-            Console.WriteLine("                (y - x)");
-            Console.WriteLine("f = (y - x)-------------");
-            Console.WriteLine("                        2");
-            Console.WriteLine("            1 +  (y - x)");
 
-            double x, y, z;
+            Console.Write("Введите x: ");
+            double x = Convert.ToDouble(Console.ReadLine());
 
-            Console.WriteLine("Введите x: ");
-            x = Convert.ToDouble(Console.ReadLine());
-
-            Console.WriteLine("Введите y: ");
-            y = Convert.ToDouble(Console.ReadLine());
-
-            Console.WriteLine("Введите z: ");
-            z = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Введите y: ");
+            double y = Convert.ToDouble(Console.ReadLine());
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            Console.WriteLine(ds.Calculate(x, y, z));
-            Console.ReadLine();
+            Console.WriteLine("z = " + ds.Calculate(x, y));
+            Console.ReadKey();
         }
     }
 }

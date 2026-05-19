@@ -1,8 +1,8 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using Tyuiu.ZaitsevMS.Sprint1.Task5.V0.Lib;
+using Tyuiu.ZaitsevMS.Sprint1.Task5.V4.Lib;
 
-namespace Tyuiu.ZaitsevMS.Sprint1.Task5.V0.Test
+namespace Tyuiu.ZaitsevMS.Sprint1.Task5.V4.Test
 {
     [TestClass]
     public class DataServiceTest
@@ -10,14 +10,11 @@ namespace Tyuiu.ZaitsevMS.Sprint1.Task5.V0.Test
         [TestMethod]
         public void ValidExpression()
         {
-            double x = 15;
             DataService ds = new DataService();
-            double res = ds.Calculate(x);
-
-            int result = Convert.ToInt32(res);
-
-            int wait = 58;
-            Assert.AreEqual(wait, result);
+            int k = 13257;
+            int expected = 3;
+            int result = ds.SecondsToHours(k);
+            Assert.AreEqual(expected, result);
         }
     }
 }

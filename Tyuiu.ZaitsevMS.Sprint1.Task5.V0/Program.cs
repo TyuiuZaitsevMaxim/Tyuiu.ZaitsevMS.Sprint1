@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Tyuiu.ZaitsevMS.Sprint1.Task5.V0.Lib;
+using Tyuiu.ZaitsevMS.Sprint1.Task5.V4.Lib;
 
-namespace Tyuiu.ZaitsevMS.Sprint1.Task5.V0
+namespace Tyuiu.ZaitsevMS.Sprint1.Task5.V4
 {
     internal class Program
     {
@@ -18,26 +18,25 @@ namespace Tyuiu.ZaitsevMS.Sprint1.Task5.V0
             Console.WriteLine("* Спринт #1                                                               *");
             Console.WriteLine("* Тема: Преобразование типов и класс Convert                              *");
             Console.WriteLine("* Задание #5                                                              *");
-            Console.WriteLine("* Вариант #0                                                              *");
+            Console.WriteLine("* Вариант #4                                                              *");
             Console.WriteLine("* Выполнил: Зайцев Максим Сергеевич | ИБКСб-25-1                          *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Найти частное между квадратом X и его корнем. Ответ привести к целому   *");
-            Console.WriteLine("* с помощью класса Convert.                                               *");
+            Console.WriteLine("* Идет k-я секунда суток. Определить, сколько полных часов (h)            *");
+            Console.WriteLine("* прошло к этому моменту (например, h=3, если k=13257).                   *");
             Console.WriteLine("*                                                                         *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            Console.WriteLine("Введите x: ");
-            double x = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Введите номер секунды суток (k): ");
+            int k = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            int res = Convert.ToInt32(ds.Calculate(x));
-            Console.WriteLine(res);
+            Console.WriteLine("Полных часов прошло: " + ds.SecondsToHours(k));
 
             Console.ReadKey();
         }

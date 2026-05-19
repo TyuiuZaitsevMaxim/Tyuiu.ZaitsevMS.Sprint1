@@ -5,13 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 using tyuiu.cources.programming.interfaces.Sprint1;
 
-namespace Tyuiu.ZaitsevMS.Sprint1.Task1.V0.Lib
+namespace Tyuiu.ZaitsevMS.Sprint1.Task1.V30.Lib
 {
-    public class DataService : ISprint1Task1V0
+    public class DataService : ISprint1Task1V30
     {
-        public double Calculate(double x, double y)
+        public double Calculate(double x)
         {
-            return x / (1 - y);
+            return (2 + x) / 2;
         }
     }
 }

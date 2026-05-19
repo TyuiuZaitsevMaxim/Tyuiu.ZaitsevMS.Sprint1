@@ -1,8 +1,8 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using Tyuiu.ZaitsevMS.Sprint1.Task7.V0.Lib;
+using Tyuiu.ZaitsevMS.Sprint1.Task7.V4.Lib;
 
-namespace Tyuiu.ZaitsevMS.Sprint1.Task7.V0.Test
+namespace Tyuiu.ZaitsevMS.Sprint1.Task7.V4.Test
 {
     [TestClass]
     public class DataServiceTest
@@ -11,12 +11,12 @@ namespace Tyuiu.ZaitsevMS.Sprint1.Task7.V0.Test
         public void ValidExpression()
         {
             DataService ds = new DataService();
-            double x = 3;
-            double y = 2;
-            double z = 1;
-            double wait = 0.75;
-            var res = ds.Calculate(x, y, z);
-            Assert.AreEqual(wait, res);
+            double x = 4;
+            double y = 3;
+            double inner = (y - Math.Sqrt(Math.Abs(x))) * (x - y / (x + Math.Pow(x, 2) / 4));
+            double expected = Math.Round(Math.Log(Math.Abs(inner)), 3);
+            double result = ds.Calculate(x, y);
+            Assert.AreEqual(expected, result);
         }
     }
 }

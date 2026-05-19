@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Tyuiu.ZaitsevMS.Sprint1.Task6.V0.Lib;
+using Tyuiu.ZaitsevMS.Sprint1.Task6.V15.Lib;
 
-namespace Tyuiu.ZaitsevMS.Sprint1.Task6.V0
+namespace Tyuiu.ZaitsevMS.Sprint1.Task6.V15
 {
     internal class Program
     {
@@ -18,25 +18,25 @@ namespace Tyuiu.ZaitsevMS.Sprint1.Task6.V0
             Console.WriteLine("* Спринт #1                                                               *");
             Console.WriteLine("* Тема: Работа со строками, класс String                                  *");
             Console.WriteLine("* Задание #6                                                              *");
-            Console.WriteLine("* Вариант #0                                                              *");
+            Console.WriteLine("* Вариант #15                                                             *");
             Console.WriteLine("* Выполнил: Зайцев Максим Сергеевич | ИБКСб-25-1                          *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Написать программу: пользователь вводит строку. Удалить из строки все   *");
-            Console.WriteLine("* символы пробела и символ.                                               *");
+            Console.WriteLine("* Написать программу: пользователь вводит текст.                          *");
+            Console.WriteLine("* Проверить, что в строке больше букв, чем знаков.                        *");
             Console.WriteLine("*                                                                         *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            Console.WriteLine("Введите строку: ");
+            Console.Write("Введите строку: ");
             string str = Console.ReadLine();
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            Console.WriteLine(ds.WorkWithText(str));
+            Console.WriteLine("Букв больше, чем знаков: " + ds.CheckLettersCount(str));
             Console.ReadKey();
         }
     }

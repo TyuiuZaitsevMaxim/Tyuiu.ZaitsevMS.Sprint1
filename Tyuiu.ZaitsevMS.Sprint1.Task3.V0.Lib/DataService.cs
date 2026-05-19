@@ -5,13 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 using tyuiu.cources.programming.interfaces.Sprint1;
 
-namespace Tyuiu.ZaitsevMS.Sprint1.Task3.V0.Lib
+namespace Tyuiu.ZaitsevMS.Sprint1.Task3.V1.Lib
 {
-    public class DataService : ISprint1Task3V0
+    public class DataService : ISprint1Task3V1
     {
-        public double Calculate(double a, double b)
+        public double CylinderVolume(double r, double h)
         {
-            return a * b;
+            return Math.Round(Math.PI * r * r * h, 3);
         }
     }
 }

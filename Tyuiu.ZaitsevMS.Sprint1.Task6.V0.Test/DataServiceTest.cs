@@ -1,20 +1,28 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using Tyuiu.ZaitsevMS.Sprint1.Task6.V0.Lib;
+using Tyuiu.ZaitsevMS.Sprint1.Task6.V15.Lib;
 
-namespace Tyuiu.ZaitsevMS.Sprint1.Task6.V0.Test
+namespace Tyuiu.ZaitsevMS.Sprint1.Task6.V15.Test
 {
     [TestClass]
     public class DataServiceTest
     {
         [TestMethod]
-        public void ValidString()
+        public void ValidString_MoreLetters()
         {
-            string strTest = "1 * 2 * 3";
             DataService ds = new DataService();
-            string res = ds.WorkWithText(strTest);
-            string wait = "123";
-            Assert.AreEqual(wait, res);
+            string input = "Привет, мир!";
+            bool result = ds.CheckLettersCount(input);
+            Assert.IsTrue(result);
+        }
+
+        [TestMethod]
+        public void ValidString_MoreSigns()
+        {
+            DataService ds = new DataService();
+            string input = "а!?,;.:";
+            bool result = ds.CheckLettersCount(input);
+            Assert.IsFalse(result);
         }
     }
 }
