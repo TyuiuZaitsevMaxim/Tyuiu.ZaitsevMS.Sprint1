@@ -9,7 +9,7 @@ namespace Tyuiu.ZaitsevMS.Sprint1.Task1.V30.Test
     {
         [TestMethod]
         public void ValidExpressions()
-        {
+        { 
             DataService ds = new DataService();
             double x = 4.0;
             var res = ds.Calculate(x);
