@@ -7,7 +7,7 @@ namespace Tyuiu.ZaitsevMS.Sprint1.Task5.V4.Test
     [TestClass]
     public class DataServiceTest
     {
-        [TestMethod]
+        [TestMethod] 
         public void ValidExpression()
         {
             DataService ds = new DataService();
